@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout code'){
             steps{
-                git 'https://github.com/Thirisha0306/question1-python.git'
+                git branch: 'main', url: 'https://github.com/Thirisha0306/question1-python.git'
             }
         }
         stage('Build'){
